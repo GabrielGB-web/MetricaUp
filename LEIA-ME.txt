@@ -1,0 +1,25 @@
+METRICA UP — SITE INSTITUCIONAL
+================================
+
+Arquivos:
+- index.html       Página inicial
+- sobre.html       Página institucional / sobre a Metrica UP
+- powerbi.html     Portfólio conceitual de dashboards Power BI
+- sistemas.html    Página de sistemas e soluções digitais
+- contato.html     Página de contato
+- assets/style.css Estilos e responsividade
+- assets/script.js Menu mobile e comportamento demonstrativo do formulário
+
+COMO VISUALIZAR
+1. Extraia o ZIP mantendo a estrutura de pastas.
+2. Abra index.html em um navegador moderno.
+3. Navegue pelas páginas usando o menu superior.
+
+ANTES DE PUBLICAR
+- Atualize o e-mail e os canais oficiais de contato.
+- Configure o formulário para um serviço real (backend, CRM, serviço de formulários ou WhatsApp Business).
+- Atualize os exemplos do portfólio com imagens e estudos de caso reais. Os exemplos atuais são ilustrativos e estão identificados como conceitos.
+- Revise textos, dados legais, política de privacidade e termos aplicáveis.
+- Configure domínio, hospedagem HTTPS, analytics e metadados sociais conforme necessário.
+
+O site é estático e não exige build. Não há backend ou banco de dados incluído.

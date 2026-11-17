@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#040605">
+  <meta name="description" content="Sistemas corporativos sob medida, plataformas SaaS e soluções digitais desenvolvidas pela Metrica UP: Tecnologia que Impulsiona Resultados.">
+  <title>Sistemas &amp; Portfólio de Software | Metrica UP</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CANVAS DE FUNDO NEURAL E GRID AMBIENTE -->
+  <canvas id="techCanvas"></canvas>
+  <div class="ambient-grid"></div>
+  <div class="top-glow"></div>
+
+  <!-- HEADER COM LOGO OFICIAL -->
+  <header>
+    <div class="wrap nav">
+      <a class="brand-wrap" href="index.html" aria-label="Metrica UP — Tecnologia que Impulsiona Resultados">
+        <img src="assets/logo_transparent.png" alt="Metrica UP" class="brand-logo-img">
+        <span class="brand-sub">TECNOLOGIA QUE IMPULSIONA RESULTADOS</span>
+      </a>
+
+      <button class="menu-btn" aria-label="Abrir menu móvel" aria-expanded="false">☰</button>
+
+      <nav class="nav-links" aria-label="Navegação Principal">
+        <a href="index.html">Início</a>
+        <a href="powerbi.html">Power BI</a>
+        <a href="sistemas.html" class="active">Sistemas &amp; Portfólio</a>
+        <a href="sobre.html">A Metrica UP</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="contato.html">Planejar Meu Sistema ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="wrap reveal">
+        <div class="breadcrumbs"><a href="index.html">Início</a> / Sistemas &amp; Portfólio</div>
+        <div class="eyebrow">Engenharia Sob Medida</div>
+        <h1>Sistemas que se adaptam perfeitamente à sua <span class="accent">operação.</span></h1>
+        <p>
+          Desenvolvemos desde plataformas internacionais de alta complexidade até sistemas de sincronização local e combate à perda de clientes. Conheça abaixo nossos principais cases e soluções.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contato.html?interesse=Sistema%20Personalizado">Solicitar Proposta de Sistema ↗</a>
+          <a class="btn btn-outline" href="#cases-reais">Ver Cases em Produção</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASES REAIS DESTAQUE COM CAPTURAS PROTEGIDAS -->
+    <section id="cases-reais">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="eyebrow">Cases Reais de Sucesso</div>
+          <h2>Softwares desenvolvidos e <span class="accent">operando no mercado.</span></h2>
+          <p>
+            Projetos reais criados pela Metrica UP, provando na prática capacidade técnica, design de produto refinado e integração sólida com o negócio.
+          </p>
+        </div>
+
+        <div class="real-systems-grid">
+          <!-- 1: ZIPCARS / APEXDRIVE USA -->
+          <article class="system-card usacar reveal">
+            <div class="card-window-topbar">
+              <span class="card-category-tag blue">Mercado Americano</span>
+              <span class="status-badge" style="color:#60a5fa;border-color:rgba(96,165,250,0.3)">Car Rental SaaS</span>
+            </div>
+            <div class="system-screenshot-wrap">
+              <img src="assets/zipcars.png" alt="Interface do sistema ZipCars / ApexDrive USA" class="system-screenshot-img">
+            </div>
+            <div class="system-info">
+              <h3>ZipCars / ApexDrive USA</h3>
+              <p>Sistema completo de locação de veículos operando nos EUA. Inclui reservas em dólar, verificação de identidade, vistorias de retirada e entrega com fotos via smartphone, pagamentos Zelle e Cash App, e gestão de frotas com telemetria.</p>
+              <div class="tech-pills">
+                <span class="pill">React 18</span>
+                <span class="pill">TypeScript</span>
+                <span class="pill">Supabase</span>
+                <span class="pill">Prisma ORM</span>
+                <span class="pill">Vistoria com Fotos</span>
+                <span class="pill">Zelle / Cash App</span>
+              </div>
+              <div class="system-card-footer">
+                <button class="btn-open-modal" data-open-system="usacar">
+                  Ver Arquitetura &amp; Métricas ↗
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2: ATACADÃO MEIO A MEIO -->
+          <article class="system-card meioameio reveal reveal-delay-1">
+            <div class="card-window-topbar">
+              <span class="card-category-tag">Atacado &amp; Distribuição</span>
+              <span class="status-badge live">Sincronização em Tempo Real</span>
+            </div>
+            <div class="system-screenshot-wrap">
+              <img src="assets/meioameio.png" alt="Interface do sistema Atacadão Meio a Meio" class="system-screenshot-img">
+            </div>
+            <div class="system-info">
+              <h3>Atacadão Meio a Meio</h3>
+              <p>Plataforma para monitoramento de metas comerciais em distribuidora de grande porte. Gerencia os pilares da BIC / SOU+, possui sincronizador de background para bases locais e dashboards reativos para equipes e diretoria.</p>
+              <div class="tech-pills">
+                <span class="pill">FastAPI (Python)</span>
+                <span class="pill">SQLite Sync</span>
+                <span class="pill">Frontend Reativo</span>
+                <span class="pill">Pilares SOU+</span>
+                <span class="pill">Metas RCA</span>
+              </div>
+              <div class="system-card-footer">
+                <button class="btn-open-modal" data-open-system="meioameio">
+                  Ver Arquitetura &amp; Métricas ↗
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3: CLIENTES FLOW -->
+          <article class="system-card clientesflow reveal reveal-delay-2">
+            <div class="card-window-topbar">
+              <span class="card-category-tag purple">WinThor 8177</span>
+              <span class="status-badge" style="color:#c084fc;border-color:rgba(192,132,252,0.3)">Anti-Churn</span>
+            </div>
+            <div class="system-screenshot-wrap">
+              <img src="assets/clienteflow.png" alt="Interface do sistema Clientes Flow" class="system-screenshot-img">
+            </div>
+            <div class="system-info">
+              <h3>Clientes Flow</h3>
+              <p>Inteligência comercial preditiva focada em redução de churn e acompanhamento da rotina 8177 do WinThor. Mapeia dias sem compra, departamentos esquecidos por clientes e orienta o time de vendas para resgatar faturamento.</p>
+              <div class="tech-pills">
+                <span class="pill">Node.js</span>
+                <span class="pill">Express</span>
+                <span class="pill">WinThor 8177</span>
+                <span class="pill">Algoritmo Anti-Churn</span>
+                <span class="pill">Gestão de Carteira</span>
+              </div>
+              <div class="system-card-footer">
+                <button class="btn-open-modal" data-open-system="clientesflow">
+                  Ver Arquitetura &amp; Métricas ↗
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- O QUE MAIS PODEMOS CONSTRUIR -->
+    <section class="section-dark">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="eyebrow">Modalidades de Desenvolvimento</div>
+          <h2>Soluções sob medida para qualquer <span class="accent">desafio de negócio.</span></h2>
+          <p>
+            Desde a digitalização de processos operacionais até a arquitetura de plataformas SaaS corporativas, formatamos a solução para o seu momento e orçamento.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card reveal">
+            <div class="icon">▦</div>
+            <h3>Sistemas de Gestão Operacional</h3>
+            <p>Cadastros centralizados, hierarquias de acesso com permissões granulares, gestão de ordens de serviço, controle de status e histórico de auditoria.</p>
+          </article>
+
+          <article class="card reveal reveal-delay-1">
+            <div class="icon">◫</div>
+            <h3>Portais &amp; Plataformas Web</h3>
+            <p>Áreas autenticadas para clientes e fornecedores consultarem pedidos, extratos, 2ª via de faturas, solicitações de suporte e acompanhamento de entregas.</p>
+          </article>
+
+          <article class="card reveal reveal-delay-2">
+            <div class="icon">⌁</div>
+            <h3>Automações de Processos</h3>
+            <p>Eliminação de rotinas manuais: disparo de mensagens WhatsApp automatizadas, alertas de vencimento, importações agendadas e reconciliação financeira.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="icon">⇄</div>
+            <h3>Integrações ERPs &amp; APIs</h3>
+            <p>Conexão transparente entre sistemas legados (WinThor, Protheus, SAP, Bling, Tiny) e bancos de dados SQL Server, Oracle, PostgreSQL ou MySQL.</p>
+          </article>
+
+          <article class="card reveal reveal-delay-1">
+            <div class="icon">▤</div>
+            <h3>Relatórios &amp; Exportações</h3>
+            <p>Geradores de relatórios em Excel/PDF parametrizados, relatórios operacionais consolidados e visões gerenciais instantâneas.</p>
+          </article>
+
+          <article class="card reveal reveal-delay-2">
+            <div class="icon">⚙</div>
+            <h3>Modernização de Legados</h3>
+            <p>Transformação de sistemas antigos, lentos ou planilhas que travam em aplicações modernas baseadas na web, rápidas e acessíveis de qualquer dispositivo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ETAPAS DE CONSTRUÇÃO -->
+    <section id="automacao">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="eyebrow">Como Trabalhamos</div>
+          <h2>Um ciclo claro, transparente e <span class="accent">orientado a valor.</span></h2>
+        </div>
+
+        <div class="process">
+          <div class="step reveal">
+            <h3>1. Imersão &amp; Mapeamento</h3>
+            <p>Mapeamos regras de negócio, gargalos atuais, fluxo de dados e perfis de usuários que utilizarão a ferramenta.</p>
+          </div>
+          <div class="step reveal reveal-delay-1">
+            <h3>2. Prototipagem &amp; Escopo</h3>
+            <p>Desenhamos a arquitetura técnica, fluxo de telas e definimos os entregáveis de forma detalhada e previsível.</p>
+          </div>
+          <div class="step reveal reveal-delay-2">
+            <h3>3. Desenvolvimento Ágil</h3>
+            <p>Construímos o software em ciclos com entregas frequentes para validação prática junto ao time do cliente.</p>
+          </div>
+          <div class="step reveal reveal-delay-3">
+            <h3>4. Deploy &amp; Evolução</h3>
+            <p>Publicação com segurança, treinamento dos usuários, monitoramento e planejamento de novas funcionalidades.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER CTA -->
+    <div class="cta-band">
+      <div class="wrap">
+        <div class="cta-box reveal">
+          <div>
+            <div class="eyebrow">Tem um desafio em mente?</div>
+            <h2>Vamos desenhar uma solução para a <span class="accent">sua operação.</span></h2>
+            <p>Compartilhe o problema que você enfrenta hoje e avaliaremos o melhor caminho técnico para transformar sua rotina.</p>
+          </div>
+          <a class="btn btn-primary" href="contato.html?interesse=Sistema%20Sob%20Medida">Agendar Reunião Técnica ↗</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL DE DETALHES DE ARQUITETURA DO SISTEMA -->
+  <div class="system-modal-backdrop" id="systemModalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="system-modal-content">
+      <div class="modal-header">
+        <h3 id="modalSystemTitle">Detalhes do Sistema</h3>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Fechar modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-highlight-box">
+          <div style="font-size:11px;font-weight:800;color:var(--accent);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px" id="modalSystemCategory">CATEGORIA</div>
+          <p id="modalSystemHighlight" style="margin:0;font-size:14px;color:#f0f7f2"></p>
+        </div>
+
+        <h4 style="font-size:15px;color:#fff;margin-bottom:12px">Especificações &amp; Recursos Técnicos:</h4>
+        <div class="modal-specs-grid" id="modalSystemSpecs">
+          <!-- Injetado dinamicamente via JS -->
+        </div>
+
+        <div style="background:rgba(255,255,255,0.03);border:1px solid var(--panel-border-light);border-radius:var(--radius-sm);padding:14px 18px;margin-top:18px">
+          <strong style="color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px">Impacto &amp; Resultados Aferidos:</strong>
+          <span id="modalSystemImpact" style="font-size:13.5px;color:#dce5de"></span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" onclick="document.getElementById('systemModalBackdrop').classList.remove('active')">Fechar</button>
+        <a class="btn btn-primary" id="modalCtaBtn" href="contato.html">Quero um Sistema Assim ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER COM LOGO OFICIAL E SLOGAN -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <div class="footer-brand-wrap">
+          <img src="assets/logo_transparent.png" alt="Metrica UP" class="footer-logo-img">
+          <div style="color:#8fa093;font-size:11px;letter-spacing:0.5px">Tecnologia que Impulsiona Resultados.</div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Início</a>
+          <a href="powerbi.html">Power BI</a>
+          <a href="sistemas.html">Sistemas &amp; Portfólio</a>
+          <a href="sobre.html">A Empresa</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <div>© <span data-year></span> Metrica UP. Todos os direitos reservados.</div>
+      </div>
+      <div class="footer-bottom">
+        <span>Engenharia de Software, Sistemas Web Sob Medida e Business Intelligence.</span>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <button class="btn-replay-intro" data-replay-intro title="Rever animação da logo Metrica UP">
+            <span>▶</span> Rever Apresentação
+          </button>
+          <span>Aplicações com alto padrão de segurança, usabilidade e estabilidade.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP (FAB) -->
+  <div class="whatsapp-fab-container" aria-label="Atendimento via WhatsApp">
+    <div class="whatsapp-fab-tooltip" id="waTooltip">
+      <span>💬 Olá! Precisa de um sistema ou automação?</span>
+      <button class="close-tip" id="closeWaTip" aria-label="Fechar balão">✕</button>
+    </div>
+    <a class="whatsapp-fab-btn" href="https://wa.me/5593991481515?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Metrica%20UP%20e%20gostaria%20de%20conversar%20sobre%20um%20sistema." target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp com a Metrica UP">
+      <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.058.376-.058c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.159.57 4.184 1.564 5.938l-1.564 5.719 5.873-1.54c1.707.95 3.666 1.483 5.727 1.483 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+    </a>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

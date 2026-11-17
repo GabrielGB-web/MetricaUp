@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#040605">
+  <meta name="description" content="Entre em contato com a equipe da Metrica UP: Tecnologia que Impulsiona Resultados.">
+  <title>Contato &amp; Diagnóstico | Metrica UP</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CANVAS DE FUNDO NEURAL E GRID AMBIENTE -->
+  <canvas id="techCanvas"></canvas>
+  <div class="ambient-grid"></div>
+  <div class="top-glow"></div>
+
+  <!-- HEADER COM LOGO OFICIAL -->
+  <header>
+    <div class="wrap nav">
+      <a class="brand-wrap" href="index.html" aria-label="Metrica UP — Tecnologia que Impulsiona Resultados">
+        <img src="assets/logo_transparent.png" alt="Metrica UP" class="brand-logo-img">
+        <span class="brand-sub">TECNOLOGIA QUE IMPULSIONA RESULTADOS</span>
+      </a>
+
+      <button class="menu-btn" aria-label="Abrir menu móvel" aria-expanded="false">☰</button>
+
+      <nav class="nav-links" aria-label="Navegação Principal">
+        <a href="index.html">Início</a>
+        <a href="sistemas.html">Sistemas &amp; Portfólio</a>
+        <a href="powerbi.html">Power BI</a>
+        <a href="sobre.html">A Metrica UP</a>
+        <a href="contato.html" class="active">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="contato.html">Falar Agora ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="wrap reveal">
+        <div class="breadcrumbs"><a href="index.html">Início</a> / Contato</div>
+        <div class="eyebrow">Canais de Atendimento</div>
+        <h1>Conte o seu desafio. Vamos desenhar a <span class="accent">solução ideal.</span></h1>
+        <p>
+          Compartilhe os detalhes da sua empresa, as regras operacionais que você quer otimizar ou a plataforma que quer construir. Nossa equipe técnica retornará com um diagnóstico preciso.
+        </p>
+      </div>
+    </section>
+
+    <!-- FORMULÁRIO E INFORMAÇÕES DE CONTATO -->
+    <section>
+      <div class="wrap contact-grid">
+        <div class="contact-info reveal">
+          <div class="eyebrow">Diagnóstico Sob Medida</div>
+          <h2>Seu projeto começa com <span class="accent">alinhamento estratégico.</span></h2>
+          <p>
+            Atendemos empresas em todo o Brasil e projetos internacionais, com foco em desenvolvimento de sistemas de alta qualidade, dashboards executivos e automação.
+          </p>
+
+          <div class="contact-detail">
+            <span class="sym">💬</span>
+            <div>
+              <strong>WhatsApp Comercial</strong>
+              <div class="muted" style="font-size:13px;margin-top:2px">
+                <a href="https://wa.me/5593991481515?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20um%20projeto%20com%20a%20Metrica%20UP." target="_blank" rel="noopener noreferrer" style="color:var(--accent);font-weight:700">
+                  +55 (93) 99148-1515 ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="sym">✉</span>
+            <div>
+              <strong>E-mail Direto</strong>
+              <div class="muted" style="font-size:13px;margin-top:2px">contato@metricaup.com.br</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="sym">⚡</span>
+            <div>
+              <strong>Atendimento Consultivo</strong>
+              <div class="muted" style="font-size:13px;margin-top:2px">Avaliação de arquitetura, banco de dados e requisitos técnicos</div>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="sym">🕒</span>
+            <div>
+              <strong>Tempo de Resposta</strong>
+              <div class="muted" style="font-size:13px;margin-top:2px">Retorno técnico em até 24 horas úteis</div>
+            </div>
+          </div>
+
+          <div class="notice">
+            <strong>Privacidade Garantida:</strong> Suas informações e dados de operação são tratados sob sigilo estrito e utilizados exclusivamente para elaborar o diagnóstico do seu projeto.
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal-delay-1" id="contactForm">
+          <div class="field">
+            <label for="nome">Nome Completo *</label>
+            <input id="nome" name="nome" placeholder="Seu nome" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="empresa">Empresa</label>
+            <input id="empresa" name="empresa" placeholder="Nome da sua empresa" autocomplete="organization">
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail Profissional *</label>
+            <input id="email" name="email" type="email" placeholder="voce@empresa.com.br" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="telefone">Telefone / WhatsApp *</label>
+            <input id="telefone" name="telefone" type="tel" placeholder="(00) 00000-0000" autocomplete="tel" required>
+          </div>
+
+          <div class="field full">
+            <label for="solucao">Solução de Maior Interesse *</label>
+            <select id="solucao" name="solucao" required>
+              <option value="">Selecione uma opção</option>
+              <option value="Sistema ZipCars / USA (Locação / Frota)">Sistema similar ao ZipCars / USA (Locação / Frota)</option>
+              <option value="Sistema Meio a Meio (Gestão de Metas & Sync)">Sistema similar ao Meio a Meio (Gestão de Metas &amp; Sync)</option>
+              <option value="Clientes Flow (Inteligência Comercial & Churn)">Sistema similar ao Clientes Flow (Retenção &amp; Churn)</option>
+              <option value="Sistema Corporativo Sob Medida">Sistema Empresarial Web Sob Medida</option>
+              <option value="Dashboards Power BI Executivo">Dashboards Power BI / Business Intelligence</option>
+              <option value="Automação de Processos & Integrações">Automação de Processos &amp; Integração ERP</option>
+              <option value="Outro Desafio Tecnológico">Outro Desafio Tecnológico</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="prazo">Expectativa de Início</label>
+            <select id="prazo" name="prazo">
+              <option>Imediato (Nas próximas semanas)</option>
+              <option>Nos próximos 30 a 60 dias</option>
+              <option>Planejamento para o próximo trimestre</option>
+              <option>Apenas avaliando possibilidades e orçamento</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="mensagem">Descreva o seu desafio ou projeto *</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte-nos quais rotinas você deseja digitalizar, automatizar ou acompanhar em dashboards..." required></textarea>
+          </div>
+
+          <p class="form-note">
+            Ao enviar, prepararemos sua solicitação diretamente para o nosso time de engenharia comercial.
+          </p>
+
+          <button class="btn btn-primary" type="submit">Enviar Mensagem ↗</button>
+          <p id="form-feedback" class="form-note" style="display:none;margin-top:10px"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER COM LOGO OFICIAL E SLOGAN -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <div class="footer-brand-wrap">
+          <img src="assets/logo_transparent.png" alt="Metrica UP" class="footer-logo-img">
+          <div style="color:#8fa093;font-size:11px;letter-spacing:0.5px">Tecnologia que Impulsiona Resultados.</div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Início</a>
+          <a href="sistemas.html">Sistemas &amp; Portfólio</a>
+          <a href="powerbi.html">Power BI</a>
+          <a href="sobre.html">A Empresa</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <div>© <span data-year></span> Metrica UP. Todos os direitos reservados.</div>
+      </div>
+      <div class="footer-bottom">
+        <span>Engenharia de Software, Sistemas Web Sob Medida e Business Intelligence.</span>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <button class="btn-replay-intro" data-replay-intro title="Rever animação da logo Metrica UP">
+            <span>▶</span> Rever Apresentação
+          </button>
+          <span>Aplicações com alto padrão de segurança, usabilidade e estabilidade.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP (FAB) -->
+  <div class="whatsapp-fab-container" aria-label="Atendimento via WhatsApp">
+    <div class="whatsapp-fab-tooltip" id="waTooltip">
+      <span>💬 Atendimento Direto: +55 (93) 99148-1515</span>
+      <button class="close-tip" id="closeWaTip" aria-label="Fechar balão">✕</button>
+    </div>
+    <a class="whatsapp-fab-btn" href="https://wa.me/5593991481515?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Metrica%20UP%20e%20gostaria%20de%20iniciar%20uma%20conversa." target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp com a Metrica UP">
+      <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.058.376-.058c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.159.57 4.184 1.564 5.938l-1.564 5.719 5.873-1.54c1.707.95 3.666 1.483 5.727 1.483 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+    </a>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

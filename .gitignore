@@ -1,0 +1,5 @@
+# Ignorar backups locais e arquivos temporários do sistema
+backup_original/
+.DS_Store
+Thumbs.db
+*.log

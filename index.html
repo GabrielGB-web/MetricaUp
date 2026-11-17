@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#040605">
+  <meta name="description" content="Metrica UP: Tecnologia que Impulsiona Resultados. Dashboards Executivos Power BI, Engenharia de Software e Soluções Digitais sob Medida.">
+  <title>Metrica UP | Tecnologia que Impulsiona Resultados</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- INTRO CINEMATOGRÁFICA — ANIMAÇÃO DO "UP" IMPULSIONANDO -->
+  <div class="tech-intro-overlay" id="techIntroOverlay" aria-label="Apresentação Metrica UP">
+    <div class="intro-stage">
+      <div class="intro-logo-wrap">
+        <img src="assets/logo_part_metrica.png" alt="Metrica" class="intro-part-metrica">
+        <img src="assets/logo_part_up.png" alt="UP" class="intro-part-up">
+        <div class="intro-shockwave"></div>
+      </div>
+
+      <div class="intro-slogan-box">
+        <span class="slogan-line"></span>
+        <span>TECNOLOGIA QUE IMPULSIONA RESULTADOS</span>
+        <span class="slogan-line"></span>
+      </div>
+
+      <div class="intro-meta-box">
+        <div class="intro-progress-bar-wrap">
+          <div class="intro-progress-bar"></div>
+        </div>
+        <div class="intro-bottom-controls">
+          <span>SYSTEM READY</span>
+          <button class="btn-skip-intro" id="btnSkipIntro">Pular [ESC]</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CANVAS DE FUNDO NEURAL E GRID AMBIENTE -->
+  <canvas id="techCanvas"></canvas>
+  <div class="ambient-grid"></div>
+  <div class="top-glow"></div>
+
+  <!-- HEADER COM LOGO OFICIAL -->
+  <header>
+    <div class="wrap nav">
+      <a class="brand-wrap" href="index.html" aria-label="Metrica UP — Tecnologia que Impulsiona Resultados">
+        <img src="assets/logo_transparent.png" alt="Metrica UP" class="brand-logo-img">
+        <span class="brand-sub">TECNOLOGIA QUE IMPULSIONA RESULTADOS</span>
+      </a>
+
+      <button class="menu-btn" aria-label="Abrir menu móvel" aria-expanded="false">☰</button>
+
+      <nav class="nav-links" aria-label="Navegação Principal">
+        <a href="index.html" class="active">Início</a>
+        <a href="powerbi.html">Power BI</a>
+        <a href="sistemas.html">Sistemas &amp; Portfólio</a>
+        <a href="sobre.html">A Metrica UP</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary" href="contato.html?interesse=Power%20BI">Solicitar Dashboard ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION COM DESTAQUE EM POWER BI -->
+    <section class="wrap hero">
+      <div class="reveal">
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Inteligência de Dados &amp; Engenharia de Software
+        </div>
+        <h1>
+          Transforme dados em <span class="gradient-text">visões estratégicas</span> e impulsione suas <span class="accent-block">decisões de negócio.</span>
+        </h1>
+        <p class="hero-copy">
+          A <strong>Metrica UP</strong> desenvolve dashboards executivos em Power BI e sistemas web de alto impacto para dar controle absoluto a diretores, gerentes e equipes — gerando clareza de indicadores, governança e previsibilidade operacional.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="powerbi.html">Ver Portfólio Power BI ↗</a>
+          <a class="btn btn-outline" href="sistemas.html">Conhecer Sistemas Web</a>
+        </div>
+
+        <div class="hero-chips">
+          <div class="hero-chip-item">
+            <span class="chip-icon">📊</span> Modelagem Dimensional Star Schema
+          </div>
+          <div class="hero-chip-item">
+            <span class="chip-icon">⚡</span> Dashboards com DAX Otimizado
+          </div>
+          <div class="hero-chip-item">
+            <span class="chip-icon">🛡️</span> Integração com ERPs e Bancos
+          </div>
+        </div>
+      </div>
+
+      <!-- PAINEL INTERATIVO DO HERO: DESTAQUE PRINCIPAL NOS DASHBOARDS POWER BI -->
+      <div class="hero-showcase reveal reveal-delay-1">
+        <div class="cyber-panel">
+          <div class="cyber-panel-header">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="panel-tabs" role="tablist">
+              <button class="panel-tab-btn active" data-tab="tab-vendas" role="tab">Vendas &amp; Metas</button>
+              <button class="panel-tab-btn" data-tab="tab-logistica" role="tab">Logística &amp; Custos</button>
+              <button class="panel-tab-btn" data-tab="tab-dre" role="tab">DRE &amp; Finanças</button>
+            </div>
+          </div>
+
+          <div class="cyber-panel-body">
+            <!-- ABA 1: DASHBOARD DE VENDAS -->
+            <div class="tab-pane active" id="tab-vendas">
+              <div class="preview-header-meta">
+                <div class="system-title">
+                  <span>📊</span> Dashboard de Performance de Vendas
+                </div>
+                <div class="status-badge live">POWER BI ONLINE</div>
+              </div>
+              <div class="hero-preview-img-box">
+                <img src="assets/dash_vendas.png" alt="Dashboard de Vendas Power BI">
+              </div>
+              <div class="mini-stats-grid">
+                <div class="mini-stat-card">
+                  <div class="mini-stat-label">Faturamento</div>
+                  <div class="mini-stat-value">R$ 11,0M</div>
+                  <div class="mini-stat-trend">↑ +7,2% vs Ano Ant.</div>
+                </div>
+                <div class="mini-stat-card">
+                  <div class="mini-stat-label">Margem Bruta</div>
+                  <div class="mini-stat-value">R$ 5,8M</div>
+                  <div class="mini-stat-trend">↑ Meta Atingida</div>
+                </div>
+                <div class="mini-stat-card">
+                  <div class="mini-stat-label">Qtd Vendida</div>
+                  <div class="mini-stat-value">91,6K</div>
+                  <div class="mini-stat-trend">+231% Evolução</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ABA 2: DASHBOARD LOGÍSTICA -->
+            <div class="tab-pane" id="tab-logistica">
+              <div class="preview-header-meta">
+                <div class="system-title">
+                  <span>🚚</span> Dashboard de Custos Logísticos
+                </div>
+                <div class="status-badge live">POWER BI ONLINE</div>
+              </div>
+              <div class="hero-preview-img-box">
+                <img src="assets/dash_logistica.png" alt="Dashboard Logística Power BI">
+              </div>
+              <div class="mini-stats-grid">
+                <div class="mini-stat-card">
+                  <div class="mini-stat-label">Receita Bruta</div>
+                  <div class="mini-stat-value">R$ 127M</div>
+                  <div class="mini-stat-trend">Operação Global</div>
+                </div>
+                <div class="mini-stat-card">
+                  <div class="mini-stat-label">Margem %</div>
+                  <div class="mini-stat-value">30,4%</div>
+                  <div class="mini-stat-trend">Margem Operacional</div>
+                </div>
+                <div class="mini-stat-card">
+                  <div class="mini-stat-label">Custo por Veículo</div>
+                  <div class="mini-stat-value">Top 4</div>
+                  <div class="mini-stat-trend">Truck a Rodotrem</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ABA 3: DASHBOARD DRE -->
+            <div class="tab-pane" id="tab-dre">
+              <div class="preview-header-meta">
+                <div class="system-title">
+                  <span>📈</span> Dashboard DRE &amp; Controladoria
+                </div>
+                <div class="status-badge live">POWER BI ONLINE</div>
+              </div>
+              <div class="hero-preview-img-box">
+                <img src="assets/dash_dre.png" alt="Dashboard DRE Power BI">
+              </div>
+              <div class="mini-stats-grid">
+                <div class="mini-stat-card">
+                  <div class="mini-stat-label">Receita Líquida</div>
+                  <div class="mini-stat-value">R$ 2,9M</div>
+                  <div class="mini-stat-trend">Análise Horizontal</div>
+                </div>
+                <div class="mini-stat-card">
+                  <div class="mini-stat-label">Margem Contrib.</div>
+                  <div class="mini-stat-value">19,5%</div>
+                  <div class="mini-stat-trend">R$ 831K Gerados</div>
+                </div>
+                <div class="mini-stat-card">
+                  <div class="mini-stat-label">EBITDA Gerencial</div>
+                  <div class="mini-stat-value">7,8%</div>
+                  <div class="mini-stat-trend">R$ 333K Líquidos</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cyber-panel-footer">
+            <span>METRICA UP · POWER BI STUDIO</span>
+            <a href="powerbi.html">Ver todos os 6 dashboards ao vivo ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIXA DE TECNOLOGIAS E CAPACIDADES -->
+    <div class="tech-strip">
+      <div class="wrap tech-strip-inner">
+        <div class="tech-strip-item">
+          <div class="badge-symbol">📊</div>
+          <div>Dashboards Executivos Power BI</div>
+        </div>
+        <div class="tech-strip-item">
+          <div class="badge-symbol">⚡</div>
+          <div>Sistemas Web Sob Medida</div>
+        </div>
+        <div class="tech-strip-item">
+          <div class="badge-symbol">🔄</div>
+          <div>Integração ERPs (WinThor, Totvs, SAP)</div>
+        </div>
+        <div class="tech-strip-item">
+          <div class="badge-symbol">🛡️</div>
+          <div>Consultoria &amp; Governança de Dados</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAIXA DE MÉTRICAS DE IMPACTO CONSOLIDADO -->
+    <section class="impact-stats-band">
+      <div class="wrap">
+        <div class="impact-stats-grid reveal">
+          <div class="impact-stat-item">
+            <span class="impact-stat-num" data-counter="150" data-prefix="R$ " data-suffix="M+">R$ 150M+</span>
+            <div class="impact-stat-label">Operações &amp; Vendas</div>
+            <div class="impact-stat-sub">Monitoradas em tempo real nos dashboards</div>
+          </div>
+          <div class="impact-stat-item">
+            <span class="impact-stat-num" data-counter="5" data-suffix="+ Anos">5+ Anos</span>
+            <div class="impact-stat-label">Especialização em Dados</div>
+            <div class="impact-stat-sub">Modelagem dimensional &amp; DAX avançado</div>
+          </div>
+          <div class="impact-stat-item">
+            <span class="impact-stat-num" data-counter="100" data-suffix="%">100%</span>
+            <div class="impact-stat-label">Projetos Customizados</div>
+            <div class="impact-stat-sub">Desenvolvidos para dores reais do negócio</div>
+          </div>
+          <div class="impact-stat-item">
+            <span class="impact-stat-num">&lt; <span style="color:var(--accent)">1s</span></span>
+            <div class="impact-stat-label">Latência de Sync</div>
+            <div class="impact-stat-sub">Sincronização ágil entre bases e ERPs</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO PRINCIPAL DE DESTAQUE: DASHBOARDS POWER BI -->
+    <section id="destaque-powerbi">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="eyebrow">Destaques em Business Intelligence</div>
+          <h2>Dashboards interativos criados para <span class="accent">decisões de liderança.</span></h2>
+          <p>
+            Projetos desenvolvidos por <strong>Bianca Beatriz</strong> (Power BI Specialist com mais de 5 anos de experiência), prontos para você testar ao vivo no ambiente oficial do Power BI Service.
+          </p>
+        </div>
+
+        <div class="powerbi-grid-6">
+          <!-- CARD 1: VENDAS -->
+          <article class="system-card reveal">
+            <div class="card-window-topbar">
+              <span class="card-category-tag">Vendas &amp; Metas</span>
+              <span class="status-badge live">Ao Vivo</span>
+            </div>
+            <div class="system-screenshot-wrap">
+              <img src="assets/dash_vendas.png" alt="Dashboard de Vendas Power BI" class="system-screenshot-img">
+            </div>
+            <div class="system-info">
+              <h3>Performance de Vendas</h3>
+              <p>Visão de faturamento (R$ 11M), margem bruta (R$ 5,8M), quantidade de vendas, ticket médio e acompanhamento detalhado de metas por produto e vendedor.</p>
+              <div class="tech-pills">
+                <span class="pill">Faturamento R$ 11M</span>
+                <span class="pill">Margem Bruta</span>
+                <span class="pill">Metas RCA</span>
+                <span class="pill">Curva ABC</span>
+              </div>
+              <div class="system-card-footer">
+                <a class="btn-live-powerbi" href="https://app.powerbi.com/view?r=eyJrIjoiNTVlOTM0MzQtYTVhNS00NGFjLWE2OTctOTBiYzE1Yzg0OTZmIiwidCI6IjhkNTBkODcwLTM2ZGUtNDBiNi1iMmExLTRiOThhNTY1NmUyMiJ9" target="_blank" rel="noopener noreferrer">
+                  Testar no Power BI ↗
+                </a>
+                <a class="card-link" href="contato.html?interesse=Dashboard%20de%20Vendas">Solicitar ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 2: LOGÍSTICA -->
+          <article class="system-card reveal reveal-delay-1">
+            <div class="card-window-topbar">
+              <span class="card-category-tag blue">Supply Chain &amp; Fretes</span>
+              <span class="status-badge live">Ao Vivo</span>
+            </div>
+            <div class="system-screenshot-wrap">
+              <img src="assets/dash_logistica.png" alt="Dashboard Logística Power BI" class="system-screenshot-img">
+            </div>
+            <div class="system-info">
+              <h3>Gestão de Custos Logísticos</h3>
+              <p>Análise de custos operacionais e margem de 30,4% sobre receita de R$ 127M. Segmentação por filiais e custo detalhado por frota (Truck a Rodotrem).</p>
+              <div class="tech-pills">
+                <span class="pill">Receita R$ 127M</span>
+                <span class="pill">Margem 30,4%</span>
+                <span class="pill">Custo por Frota</span>
+                <span class="pill">Filiais</span>
+              </div>
+              <div class="system-card-footer">
+                <a class="btn-live-powerbi" href="https://app.powerbi.com/view?r=eyJrIjoiMjUzOTI5ZTMtODcxNy00NmFkLWI1MTItY2I4YTU1YTRjMjZjIiwidCI6IjhkNTBkODcwLTM2ZGUtNDBiNi1iMmExLTRiOThhNTY1NmUyMiJ9" target="_blank" rel="noopener noreferrer">
+                  Testar no Power BI ↗
+                </a>
+                <a class="card-link" href="contato.html?interesse=Dashboard%20Logistica">Solicitar ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- CARD 3: DRE -->
+          <article class="system-card reveal reveal-delay-2">
+            <div class="card-window-topbar">
+              <span class="card-category-tag blue">Controladoria &amp; Finanças</span>
+              <span class="status-badge live">Ao Vivo</span>
+            </div>
+            <div class="system-screenshot-wrap">
+              <img src="assets/dash_dre.png" alt="Dashboard DRE Power BI" class="system-screenshot-img">
+            </div>
+            <div class="system-info">
+              <h3>Demonstração DRE Gerencial</h3>
+              <p>DRE completa com Receita Líquida, Margem de Contribuição, EBITDA, Lucro Líquido e matriz horizontal comparativa mês a mês para conselhos e diretoria.</p>
+              <div class="tech-pills">
+                <span class="pill">DRE Dinâmica</span>
+                <span class="pill">EBITDA Gerencial</span>
+                <span class="pill">Lucro Líquido</span>
+                <span class="pill">Análise Horizontal</span>
+              </div>
+              <div class="system-card-footer">
+                <a class="btn-live-powerbi" href="https://app.powerbi.com/view?r=eyJrIjoiYjVmMmZlOTctOGMyYS00NWY0LWI3OGYtNjYxNWIzMzE3YzY5IiwidCI6IjhkNTBkODcwLTM2ZGUtNDBiNi1iMmExLTRiOThhNTY1NmUyMiJ9" target="_blank" rel="noopener noreferrer">
+                  Testar no Power BI ↗
+                </a>
+                <a class="card-link" href="contato.html?interesse=Dashboard%20DRE">Solicitar ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align:center;margin-top:42px" class="reveal">
+          <a class="btn btn-outline" href="powerbi.html">
+            Ver Todos os 6 Dashboards no Portfólio Power BI (Comercial, Fluxo de Caixa e RH) ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO COMPLEMENTAR: SISTEMAS WEB & ENGENHARIA SOB MEDIDA -->
+    <section class="section-dark" id="sistemas-empresa">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="eyebrow">Engenharia de Software</div>
+          <h2>Sistemas sob medida criados para <span class="accent">escalar operações.</span></h2>
+          <p>
+            Além da inteligência de dados, desenvolvemos softwares corporativos completos integrados com bancos de dados locais e rotinas de alta complexidade.
+          </p>
+        </div>
+
+        <div class="real-systems-grid">
+          <!-- 1: ZIPCARS -->
+          <article class="system-card reveal">
+            <div class="card-window-topbar">
+              <span class="card-category-tag blue">Mercado Americano</span>
+              <span class="status-badge" style="color:#60a5fa;border-color:rgba(96,165,250,0.3)">Car Rental SaaS</span>
+            </div>
+            <div class="system-screenshot-wrap">
+              <img src="assets/zipcars.png" alt="ZipCars / ApexDrive USA" class="system-screenshot-img">
+            </div>
+            <div class="system-info">
+              <h3>ZipCars / ApexDrive USA</h3>
+              <p>Plataforma para locação de veículos na Flórida/EUA com vistoria digital fotográfica, contratos eletrônicos e pagamentos Zelle/Cash App.</p>
+              <div class="tech-pills">
+                <span class="pill">React 18</span>
+                <span class="pill">Supabase</span>
+                <span class="pill">Vistoria Digital</span>
+                <span class="pill">EUA</span>
+              </div>
+              <div class="system-card-footer">
+                <button class="btn-open-modal" data-open-system="usacar">
+                  Ver arquitetura ↗
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2: MEIO A MEIO -->
+          <article class="system-card reveal reveal-delay-1">
+            <div class="card-window-topbar">
+              <span class="card-category-tag">Atacado &amp; Distribuição</span>
+              <span class="status-badge live">Tempo Real</span>
+            </div>
+            <div class="system-screenshot-wrap">
+              <img src="assets/meioameio.png" alt="Atacadão Meio a Meio" class="system-screenshot-img">
+            </div>
+            <div class="system-info">
+              <h3>Atacadão Meio a Meio</h3>
+              <p>Painel de metas comerciais com sincronização contínua de bases locais. Acompanhamento dos pilares BIC / SOU+ e gestão por RCA e supervisor.</p>
+              <div class="tech-pills">
+                <span class="pill">FastAPI</span>
+                <span class="pill">Python</span>
+                <span class="pill">SQLite Sync</span>
+                <span class="pill">Pilares SOU+</span>
+              </div>
+              <div class="system-card-footer">
+                <button class="btn-open-modal" data-open-system="meioameio">
+                  Ver arquitetura ↗
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3: CLIENTES FLOW -->
+          <article class="system-card reveal reveal-delay-2">
+            <div class="card-window-topbar">
+              <span class="card-category-tag purple">WinThor 8177</span>
+              <span class="status-badge" style="color:#c084fc;border-color:rgba(192,132,252,0.3)">Anti-Churn</span>
+            </div>
+            <div class="system-screenshot-wrap">
+              <img src="assets/clienteflow.png" alt="Clientes Flow" class="system-screenshot-img">
+            </div>
+            <div class="system-info">
+              <h3>Clientes Flow</h3>
+              <p>Inteligência comercial preditiva focada em redução de churn. Mapeia dias sem compra e alerta perda de clientes e categorias perdidas.</p>
+              <div class="tech-pills">
+                <span class="pill">Node.js</span>
+                <span class="pill">Express</span>
+                <span class="pill">WinThor 8177</span>
+                <span class="pill">Churn Defense</span>
+              </div>
+              <div class="system-card-footer">
+                <button class="btn-open-modal" data-open-system="clientesflow">
+                  Ver arquitetura ↗
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO: NOSSA ABORDAGEM -->
+    <section>
+      <div class="wrap feature">
+        <div class="reveal">
+          <div class="eyebrow">Engenharia com Propósito</div>
+          <h2>Entendemos a operação antes de <span class="accent">escrever o código.</span></h2>
+          <p class="muted">
+            Muitos softwares e relatórios falham porque tentam impor fluxos genéricos que não combinam com a realidade da empresa. Na Metrica UP, começamos imergindo no seu desafio, identificando onde está o valor e entregando soluções rápidas, elegantes e intuitivas.
+          </p>
+          <div class="feature-list">
+            <div class="feature-row">
+              <div class="check">✓</div>
+              <div>
+                <strong>Alinhamento Estratégico</strong>
+                <span>Cada métrica e funcionalidade é planejada para economizar tempo ou aumentar faturamento.</span>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="check">✓</div>
+              <div>
+                <strong>Arquitetura Moderna &amp; Escalável</strong>
+                <span>Utilizamos padrões consolidados de mercado que garantem estabilidade e facilidade de evolução.</span>
+              </div>
+            </div>
+            <div class="feature-row">
+              <div class="check">✓</div>
+              <div>
+                <strong>Acompanhamento Próximo</strong>
+                <span>Processo transparente com validações constantes para garantir entrega impecável.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-panel reveal reveal-delay-1">
+          <div class="eyebrow">Ciclo de Entrega</div>
+          <h3 style="font-size:24px;margin:14px 0 20px;font-weight:800">Construção ágil e focada em resultados reais.</h3>
+          <div class="mini-kpi">
+            <div class="kpi">
+              <strong>01</strong>
+              <span>Diagnóstico &amp; Requisitos</span>
+            </div>
+            <div class="kpi">
+              <strong>02</strong>
+              <span>Modelagem &amp; Validação</span>
+            </div>
+            <div class="kpi">
+              <strong>03</strong>
+              <span>Desenvolvimento Ágil</span>
+            </div>
+            <div class="kpi">
+              <strong>04</strong>
+              <span>Implantação &amp; Suporte</span>
+            </div>
+          </div>
+          <p class="muted" style="font-size:12px;margin-bottom:0">
+            Você acompanha cada evolução dos seus dashboards e sistemas com total clareza e previsibilidade.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER DE CHAMADA FINAL (CTA) -->
+    <div class="cta-band">
+      <div class="wrap">
+        <div class="cta-box reveal">
+          <div>
+            <div class="eyebrow">Pronto para dar o próximo passo?</div>
+            <h2>Leve os dados da sua empresa para o <span class="accent">próximo nível.</span></h2>
+            <p>Conte-nos sobre o seu projeto ou desafio operacional. Vamos desenhar juntos a solução ideal para transformar seus processos em vantagens competitivas.</p>
+          </div>
+          <a class="btn btn-primary" href="contato.html">Solicitar Diagnóstico Gratuito ↗</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- MODAL DE DETALHES DE ARQUITETURA DO SISTEMA -->
+  <div class="system-modal-backdrop" id="systemModalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="system-modal-content">
+      <div class="modal-header">
+        <h3 id="modalSystemTitle">Detalhes do Sistema</h3>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Fechar modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-highlight-box">
+          <div style="font-size:11px;font-weight:800;color:var(--accent);letter-spacing:1px;text-transform:uppercase;margin-bottom:4px" id="modalSystemCategory">CATEGORIA</div>
+          <p id="modalSystemHighlight" style="margin:0;font-size:14px;color:#f0f7f2"></p>
+        </div>
+
+        <h4 style="font-size:15px;color:#fff;margin-bottom:12px">Especificações &amp; Recursos Técnicos:</h4>
+        <div class="modal-specs-grid" id="modalSystemSpecs">
+          <!-- Injetado dinamicamente via JS -->
+        </div>
+
+        <div style="background:rgba(255,255,255,0.03);border:1px solid var(--panel-border-light);border-radius:var(--radius-sm);padding:14px 18px;margin-top:18px">
+          <strong style="color:var(--accent);font-size:12px;text-transform:uppercase;letter-spacing:0.5px;display:block;margin-bottom:4px">Impacto &amp; Resultados Aferidos:</strong>
+          <span id="modalSystemImpact" style="font-size:13.5px;color:#dce5de"></span>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" onclick="document.getElementById('systemModalBackdrop').classList.remove('active')">Fechar</button>
+        <a class="btn btn-primary" id="modalCtaBtn" href="contato.html">Quero um Projeto Assim ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER COM LOGO OFICIAL E SLOGAN -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-inner">
+        <div class="footer-brand-wrap">
+          <img src="assets/logo_transparent.png" alt="Metrica UP" class="footer-logo-img">
+          <div style="color:#8fa093;font-size:11px;letter-spacing:0.5px">Tecnologia que Impulsiona Resultados.</div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Início</a>
+          <a href="powerbi.html">Power BI</a>
+          <a href="sistemas.html">Sistemas &amp; Portfólio</a>
+          <a href="sobre.html">A Empresa</a>
+          <a href="contato.html">Contato</a>
+        </div>
+        <div>© <span data-year></span> Metrica UP. Todos os direitos reservados.</div>
+      </div>
+      <div class="footer-bottom">
+        <span>Engenharia de Software, Sistemas Web Sob Medida e Business Intelligence.</span>
+        <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
+          <button class="btn-replay-intro" data-replay-intro title="Rever animação da logo Metrica UP">
+            <span>▶</span> Rever Apresentação
+          </button>
+          <span>Aplicações com alto padrão de segurança, usabilidade e estabilidade.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÃO FLUTUANTE DE WHATSAPP (FAB) -->
+  <div class="whatsapp-fab-container" aria-label="Atendimento via WhatsApp">
+    <div class="whatsapp-fab-tooltip" id="waTooltip">
+      <span>💬 Olá! Precisa de um projeto ou dashboard?</span>
+      <button class="close-tip" id="closeWaTip" aria-label="Fechar balão">✕</button>
+    </div>
+    <a class="whatsapp-fab-btn" href="https://wa.me/5593991481515?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Metrica%20UP%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto." target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp com a Metrica UP">
+      <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.275.058.376-.058c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.159.57 4.184 1.564 5.938l-1.564 5.719 5.873-1.54c1.707.95 3.666 1.483 5.727 1.483 6.627 0 12-5.373 12-12s-5.373-12-12-12z"/></svg>
+    </a>
+  </div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
